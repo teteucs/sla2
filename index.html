@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cursos</title>
+  <!-- css do bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- javascript do boostrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <script src="script.js"></script>
+  <header class="fixed-top">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <!-- imagem do logo -->
+        <a class="navbar-brand" href="#"><img src="imagem/logo-p.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#Inicio">Inicio</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#Sobrenos">Sobre nos </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#Cursos">Cursos</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#Prof">Profissionais</a>
+            </li>
+
+
+            <li class="nav-item">
+              <a class="nav-link" href="#Contatos">Contatos </a>
+            </li>
+
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-success">Success</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+
+  <!-- ---------------- -->
+  <section id="Inicio">
+
+
+    <div id="cofeecarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#cofeecarousel" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#cofeecarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#cofeecarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner" data-bs-interval="2000">
+        <div class="carousel-item active">
+          <img
+            src="https://images.unsplash.com/photo-1606761568499-6d2451b23c66?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            class="d-block w-100" alt="...">
+
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Os melhores cursos na regiao de Londrina Paraná</h5>
+            <p>Vagas Limitadas!!</p>
+          </div>
+        </div>
+
+        <div class="carousel-item" data-bs-interval="2000">
+          <img
+            src="https://media.istockphoto.com/id/962475722/pt/foto/in-the-classroom-multi-ethnic-students-listening-to-a-lecturer-and-writing-in-notebooks-smart.jpg?s=2048x2048&w=is&k=20&c=lFC8cknwxWJGcubLhZGdQqODeaskDkgUjdF3siyxa10="
+            class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Melhores profissionais no setor academico do País</h5>
+            <p>Melhor ambiente para aprendizado rapido e eficiente</p>
+          </div>
+        </div>
+
+        <div class="carousel-item" data-bs-interval="2000">
+          <img
+            src="https://media.istockphoto.com/id/1485047098/pt/foto/college-students-listening-to-their-senior-teacher-on-a-class-at-lecture-hall.jpg?s=2048x2048&w=is&k=20&c=AIqZyTU4dyD8SLUUr3eaaI3ydUju4dIq8_xTvH6NXmQ="
+            class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Mais de 300 cursos disponiveis!!</h5>
+            <p>Veja mais</p>
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#cofeecarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+
+      <button class="carousel-control-next" type="button" data-bs-target="#cofeecarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+  <!-- citação -->
+  <figure class="text-center fw-light fst-italic m-5">
+    <blockquote class="blockquote">
+      <p>"O melhor aprendizado é aquele que o professor faz o aluno caminhar sozinho"</p>
+    </blockquote>
+    <figcaption class="blockquote-footer">
+      Someome Famous in <cite title="Source Title">Source Title</cite>
+    </figcaption>
+  </figure>
+
+  <!-- --------------- cards------------------- -->
+
+  <section class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-6">
+        <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="https://images.unsplash.com/photo-1584432810601-6c7f27d2362b?q=80&w=1983&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Enfermagem</h5>
+                <p class="card-text"> Você tem a chance de ajudar a salvar a vida de alguem!</p>
+                <p class="card-text"><small class="text-body-secondary">Lorem ipsum dolor sit amet consectetur,
+                    adipisicing elit. Porro expedita, labore, pariatur nemo quasi, sit illo saepe blanditiis magnam
+                    doloremque eum numquam ea beatae! Corrupti quisquam sint voluptas unde laboriosam!</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-12 col-md-6">
+        <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="https://media.istockphoto.com/id/1017296544/pt/foto/testing-software.jpg?s=2048x2048&w=is&k=20&c=vrl3wX8ASjFmUgsr1o4wCEl7V3osi7nJLlU7LF9cfkU="
+                class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Tecnico de informatica</h5>
+                <p class="card-text">Um técnico em informática desempenha um papel fundamental no suporte e manutenção
+                  de sistemas de computadores e redes.</p>
+                <p class="card-text"><small class="text-body-secondary">Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Ea eveniet neque temporibus perspiciatis ad voluptatum unde doloremque quos
+                    aspernatur nisi totam, optio cupiditate voluptate amet numquam veritatis accusantium dolorem
+                    vitae!</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- fim dos cards -->
+  <!-- --------------------Sobre Nós------------------- -->
+  <section id="Sobrenos">
+    <figure class="text-center  fst-italic m-5">
+      <blockquote class="blockquote">
+        <h1>"Quem somos Nós"</h1>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum qui ipsum ullam quaerat totam ut, voluptate
+          enim explicabo dolorem distinctio expedita suscipit minima laboriosam veritatis fugiat eveniet dicta. Cumque,
+          excepturi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores deserunt placeat molestias, nemo
+          cupiditate excepturi assumenda veniam id in voluptate consequuntur delectus sed doloribus. Dolorum est laborum
+          quaerat possimus ab. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita reiciendis incidunt
+          odit maiores at magnam mollitia autem consequatur, nulla placeat, eum omnis id cum facilis necessitatibus
+          officia sed, quis iure. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, quod voluptatum,
+          illum dolores qui nulla in beatae explicabo atque pariatur accusamus. Molestiae adipisci amet sint distinctio,
+          quidem iusto facere sed? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi aliquam cupiditate
+          deserunt culpa nesciunt quam. Illum, laudantium voluptas, quod, expedita rem harum ratione doloribus adipisci
+          soluta aut accusamus ullam dolore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit velit,
+          laborum laudantium non laboriosam porro asperiores nostrum repellat temporibus alias, voluptatum numquam
+          consectetur pariatur atque autem, explicabo odio recusandae voluptate? Lorem ipsum dolor, sit amet consectetur
+          adipisicing elit. Nesciunt quidem commodi amet quisquam veritatis quas id, expedita quo molestiae quaerat
+          dolor, ratione dolores dignissimos molestias placeat tempora delectus quae atque.</p>
+      </blockquote>
+      <figcaption class="blockquote-footer">
+        Someome Famous in <cite title="Source Title">Source Title</cite>
+      </figcaption>
+    </figure>
+  </section>
+
+
+  <!-- ---------------------------Cursos----------------------------- -->
+
+  <section id="Cursos">
+    <figure class="text-center  fst-italic m-5">
+      <blockquote class="blockquote">
+        <h1>Cursos</h1>
+    </figure>
+    <!-- menu dos Cursos-->
+
+    <!-- linha -->
+
+
+    <section class="container mt-5">
+      <div class="row">
+
+        <div class="col-sm-12 col-md-3">
+          <div class="card">
+            <img
+              src="https://media.istockphoto.com/id/1139938843/pt/foto/programmer-controlling-the-statistics-of-the-site.jpg?s=2048x2048&w=is&k=20&c=W3Sy4jekoAsvRDhsaaKjxQib_IiwXS49Nm-3WxFlfzA="
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Curso Tecnico de TI</h5>
+              <p class="card-text">R$250,00 mensal</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-3">
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1532619675605-1ede6c2ed2b0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Curso de administração</h5>
+              <p class="card-text">R$200,00 mensal</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-3">
+          <div class="card">
+            <img
+              src="https://plus.unsplash.com/premium_photo-1663013594001-c11bbd406694?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Curso de quimica</h5>
+              <p class="card-text">R$200,00 mensal</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-sm-12 col-md-3">
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1535958636474-b021ee887b13?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Curso de Técnico em Cervejaria</h5>
+              <p class="card-text">R$200,00 mensal</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-sm-12 col-md-3">
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1565562193381-576c27829023?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Curso de Interpretação de Libras</h5>
+              <p class="card-text">R$200,00 mensal</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-sm-12 col-md-3">
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1489514354504-1653aa90e34e?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Curso de pedreiro</h5>
+              <p class="card-text">R$200,00 mensal</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-sm-12 col-md-3">
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1488396325657-dce787099389?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3DD"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Técnico em Controle de Tráfego Aéreo.</h5>
+              <p class="card-text">R$200,00 mensal</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-sm-12 col-md-3">
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1615149596797-da241c6f8e30?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Curso de Técnico em Agronegócio</h5>
+              <p class="card-text">R$200,00 mensal</p>
+            </div>
+          </div>
+        </div>
+        
+
+      </div>
+    
+
+
+
+
+      </div>
+
+
+
+    </section>
+
+
+ 
+  <!-- -------------PROF ---------------->
+  <section id="Proficionais">
+    <figure class="text-center  fst-italic m-5">
+      <blockquote class="blockquote">
+        <h1>Profissionais</h1>
+    </figure>
+
+    <section class="container mt-5">
+      <div class="row">
+
+        <div class="col-sm-12 col-md-3">
+          <div class="profi">
+            <img
+              src="https://media.gettyimages.com/id/541068893/pt/foto/portrait-of-physicist-albert-einstein-sticking-his-tongue-out-1951.jpg?s=612x612&w=gi&k=20&c=pPtVQ-yfliyEHFYhetqNmILgi5-HgilGjfDkQ2jNonY="
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">ALBERTO AINSTAIN</h5>
+              <p class="card-text">FORMADO EM LETRAS</p>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="col-sm-12 col-md-3">
+          <div class="prof">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuQy0QQa94q2TcWV1FiRTvMnTqiH6WDv6TB9_Se8Ltbw&s"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">NICOLA TESLA!</h5>
+              <p class="card-text">FORMADO EM CASA</p>
+            </div>
+          </div>
+        </div>
+       
+        
+
+      </div>
+    
+
+
+
+
+     
+
+
+
+    </section>
+
+
+
+        <!-- -------------------CONTATOS------------------------------>
+        <section id="Sobrenos">
+          <figure class="text-center  fst-italic m-5">
+            <blockquote class="blockquote">
+              <h1>Contatos</h1>
+            </blockquote>
+
+          </figure>
+        </section>
+        <section id="Contatos">
+          <section class="contatos">
+            <a
+              href="https://www.instagram.com:8015/warn?fblob=Sk-ymIDMhdTkSa2jZNn5pc-Zpj-_8__984rmwPka4op58SYiAqw58-S2ngDnpbHYBEGM1AjHnis92y3wClYhW9rkyDI.&uri=/">
+              <img src="https://cdn.pixabay.com/photo/2020/11/15/06/18/instagram-logo-5744708_960_720.png" alt="">
+            </a>
+            <section class="whatts">
+              <a href="https://web.whatsapp.com/">
+                <img
+                  src="https://static.vecteezy.com/system/resources/previews/018/930/564/original/whatsapp-logo-whatsapp-icon-whatsapp-transparent-free-png.png "
+                  alt="">
+              </a>
+            </section>
+
+          </section>
+
+        </section>
+
+
+        <!-- ----------------------Lozalização---------------->
+
+
+        <section class="Loc">
+          <figure class="text-center  fst-italic m-5">
+            <blockquote class="blockquote">
+              <h1>Localização</h1>
+            </blockquote>
+          <a><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13962.031568501285!2d-52.015682030087724!3d-28.97231723527853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951da9cd8bc20d85%3A0x54a2c7051a6a62c9!2sAnta%20Gorda%2C%20RS%2C%2095980-000!5e0!3m2!1spt-BR!2sbr!4v1713203453358!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></a>
+        </section>
+      </body>
+
